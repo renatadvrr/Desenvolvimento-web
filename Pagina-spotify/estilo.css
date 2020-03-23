@@ -1,0 +1,111 @@
+/*
+*
+* Exercício feito por Renata do Valle do curso da Udemy
+*/
+
+/* =========================== Layout ============================ */
+
+html, body, .capa{
+	height: 100%
+}
+body {
+	
+	background: url('imagens/capa.png'),
+				url('imagens/ruido.png'),
+				linear-gradient(50deg, #ff4169,#7c26f8);
+	background-attachment: fixed;
+	font-family: Melvetica,Arial,sans-serif;
+}	
+
+/*  ---  Barra de Navegação  ---  */
+.img-logo{
+	height: 40px;
+	width: 132px;
+	display: block;
+	background: url('imagens/spotify.svg') no-repeat;
+	background-size: contain;
+	color: transparent;
+}
+
+nav.navbar-transparent {
+	padding: 15px 0px;
+	background: rgba(0, 0, 0, 0.6);
+	border: none;
+}
+
+.navbar-brand{
+	padding: 5px 80px;
+}
+
+.divisor{
+	width: 1px;
+	height: 16px;
+	margin: 10px 10px;
+	background: white;
+}
+
+/*.navbar-dark .navbar-nav >li>a{
+	color: white;*/
+.navbar-dark .navbar-nav .nav-link {
+	color: white;
+
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+	color: #9bf0e1;
+
+}
+/*  ---  Imagem de capa  ---  */
+
+.capa{
+	display: table;
+	width: 100%;
+
+}
+
+.texto-capa{
+	text-align: center;
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/*  ---  Botões da capa  ---  */
+
+.btn-custom {
+	color: white;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	padding: 10px 35px;
+	text-transform: uppercase;
+	margin: 0px 15px;
+	transition: background 0.4s, 0.4s;
+
+}
+
+.btn-roxo {
+	background: #7c25f8;
+}
+.btn-roxo:hover {
+	background: #6207e3;
+	color: white;
+}
+
+.btn-branco{
+	border: 2px solid white;
+}
+
+.btn-branco:hover{
+	background: #FFFFFF;
+
+}
+
+
+/* =========================== Tipografia =========================== */
+
+h1{
+	font-size: 100px;
+	font-weight:900;
+	letter-spacing: -0.05em;
+	margin-bottom: 50px;
+}
