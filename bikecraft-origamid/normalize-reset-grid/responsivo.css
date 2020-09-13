@@ -1,0 +1,140 @@
+/* ESTILO PARA TABLETS */
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+
+	/* QUALIDADE HOME */
+	.qualidade::after {
+		left: 68px;
+	}
+
+	.qualidade_lista li {
+		padding: 0px 10px;
+	}
+
+	/* FOOTER */
+	.footer_redes ul li a img {
+		width: 26px;
+		height: 26px;
+	}
+
+	/* PÁGINA PRODUTOS */
+	.produto_item h2 {
+		top: -150px;
+	}
+
+	.produto_icone {
+		padding: 41px 0;
+		height: 222px;
+	}
+
+	.produto_info p {
+		font-size: 14px;
+		height: 122px;
+		line-height: 20px;
+		padding: 20px 30px;
+	}
+
+	.produto_info ul li {
+		width: 181px;
+		height: 49px;
+		text-align: center;
+		padding-top: 16px;
+	}
+
+}
+
+/* ESTILO PARA SMARTPHONE */
+@media only screen and (max-width: 787px) {
+
+	/* HEADEER */
+	.header {
+		position: relative;
+		padding-bottom: 0;
+	}
+
+	.header img {
+		margin: 0 auto 20px;
+	}
+
+	.header_menu ul li {
+		margin: 5px;
+	}
+
+	.header_menu ul li a {
+		border: 4px solid #000;
+		width: 136px;
+		display: block;
+		float: left;
+		text-align: center;
+	}
+
+	.header_menu ul li a:hover {
+		color: #fff;
+	}
+
+
+	/* INTRODUÇÃO */
+	.introducao {
+		margin-top: 0px;
+		padding-top: 40px;
+		background: url(/img/bg-mobile.jpg) no-repeat center;
+		background-size: cover;
+	}
+
+	.introducao h1 {
+		font-size: 36px;
+	}
+
+	/* CALL TO ACTION */
+	.call-to-action {
+		padding-top: 10px;
+	}
+
+	/* QUALIDADE */
+	.qualidade::after {
+		background: none;
+	}
+
+	/* FOOTER */
+	.footer_historia {
+		padding: 15px 0 0 0;
+	}
+
+	.footer_contato {
+		padding: 0;
+	}
+
+	/* PÁGINA SOBRE */
+	.introducao_interno {
+		margin-top: 0px;
+		padding-top: 20px 0;
+	}
+
+	/* PÁGINA PRODUTOS */
+	.produto_item h2 {
+		font-size: 24px;
+		top: -100px;
+	}
+	.produto_icone {
+		height: 180px;
+		padding: 20px 0;
+	}
+	.produto_icone img {
+		margin: 0 auto;
+	}
+	.produto_info {
+		height: 204px;
+	}
+	.produto_info p {
+		font-size: 14px;
+		line-height: 20px;
+		padding: 15px 20px;
+		height: 122px;
+	}
+
+	.produto_info ul li {
+		width: 149px;
+		height: 40px;
+		text-align: center;
+		padding: 10px;
+	}
+}
