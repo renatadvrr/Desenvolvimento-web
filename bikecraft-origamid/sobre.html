@@ -3,6 +3,13 @@
 
 <head>
   <meta charset="UTF-8">
+  <title>BikCraft - Sobre</title>
+  <meta name="description" content="Compre a sua bicicleta personalizada na Bikecraft. Possuímos modelos Passei, Retrô e Esporte.">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="BikCraft - Bicicletas Personalizadas" />
+  <meta property="og:description" content="Compre a sua bicicleta personalizada na Bikecraft. Possuímos modelos Passei, Retrô e Esporte." />
+  <meta property="og:url" content="http://bikcraft.com.br" />
+  <meta property="og:image" content="http://bikcraft.com.br/img/og-image.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/normalize-reset-grid/normalize.css">
   <link rel="stylesheet" href="/normalize-reset-grid/reset.css">
@@ -10,7 +17,7 @@
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="/normalize-reset-grid/responsivo.css">
   <link rel="shortcut icon" href="https://bikcraft.com/wp-content/themes/bikcraft/favicon.ico">
-  <title>BikCraft - Sobre</title>
+  <script>document.documentElement.classList.add("js");</script>
 </head>
 
 <body>
@@ -31,26 +38,26 @@
   </header>
   <section class="introducao_interno interno_sobre">
     <div class="container">
-      <h1 class="subtitulo">Sobre</h1>
+      <h1 class="subtitulo fadeInDown" data-anime="500">Sobre</h1>
       <blockquote>
-        <p>conheça mais sobre a bikcraft</p>
+        <p data-anime="1000" class="fadeInDown">conheça mais sobre a bikcraft</p>
       </blockquote>
     </div>
   </section>
   <section class="missao_sobre container">
 
     <div class="grid-10">
-      <h3 class="subtitulo_interno">história, missão e visão</h3>
-      <p>
+      <h3 class="subtitulo_interno fadeInDown" data-anime="1500">história, missão e visão</h3>
+      <p class="fadeInDown" data-anime="2000">
         Quando iniciamos a Bikcraft queriamos apenas um produto que adoraríamos utilizar. Eramos apaixonados por pedalar e também por fazer as coisas com as nossas próprias mãos. Assim surgiu um sonho na garagem da nossa casa.
       </p>
-      <p>
+      <p class="fadeInDown" data-anime="2000">
         Conheça os nossos produtos, pergunte para os nossos clientes e descubra a maravilha de ter uma Bikcraft na sua casa.
       </p>
     </div>
     <div class="grid-6">
-      <h3 class="subtitulo_interno">valores</h3>
-      <ul>
+      <h3 class="subtitulo_interno fadeInDown" data-anime="1500">valores</h3>
+      <ul class="fadeInDown" data-anime="2000">
         <li>– Qualidade no processo com</li>
         <li>– Foco no cliente sem perder a</li>
         <li>– Diversão, preservando a</li>
@@ -136,6 +143,10 @@
       </div>
     </div>
   </footer>
+
+  <script src="./js/simple-anime.js"></script>
+  <script src="/js/script.js"></script>
+
 </body>
 
 </html>

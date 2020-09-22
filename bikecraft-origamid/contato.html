@@ -3,6 +3,13 @@
 
 <head>
   <meta charset="UTF-8">
+  <title>BikCraft - Contato</title>
+  <meta name="description" content="Compre a sua bicicleta personalizada na Bikecraft. Possuímos modelos Passei, Retrô e Esporte.">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="BikCraft - Bicicletas Personalizadas" />
+  <meta property="og:description" content="Compre a sua bicicleta personalizada na Bikecraft. Possuímos modelos Passei, Retrô e Esporte." />
+  <meta property="og:url" content="http://bikcraft.com.br" />
+  <meta property="og:image" content="http://bikcraft.com.br/img/og-image.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/normalize-reset-grid/normalize.css">
   <link rel="stylesheet" href="/normalize-reset-grid/reset.css">
@@ -10,7 +17,7 @@
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="/normalize-reset-grid/responsivo.css">
   <link rel="shortcut icon" href="https://bikcraft.com/wp-content/themes/bikcraft/favicon.ico">
-  <title>BikCraft - Produtos</title>
+  <script>document.documentElement.classList.add("js");</script>
 </head>
 
 <body>
@@ -22,7 +29,7 @@
       <nav class="grid-12 header_menu">
         <ul>
           <li><a href="sobre.html"> SOBRE </a></li>
-          <li><a href="produtos.html" > PRODUTOS </a></li>
+          <li><a href="produtos.html"> PRODUTOS </a></li>
           <li><a href="portifolio.html"> PORTIFÓLIO </a></li>
           <li><a href="contato.html" class="menu_ativo"> CONTATO </a></li>
         </ul>
@@ -32,24 +39,29 @@
 
   <section class="introducao_interno interno_contato">
     <div class="container">
-      <h1>Contato</h1>
-      <p>tire suas dúvidas com a gente</p>
+      <h1 class="fadeInDown" data-anime="500">Contato</h1>
+      <p class="fadeInDown" data-anime="1000">tire suas dúvidas com a gente</p>
     </div>
   </section>
 
-
   <section class="container">
-
-    <form id="form_contato" class="form_contato grid-8">
+    <form id="form_contato" method="POST" action="/enviar.php" class="form_contato grid-8 formphp">
       <label for="nome">Nome</label>
-      <input type="text" id="nome">
+      <input type="text" id="nome" name="nome" required>
       <label for="email">E-mail</label>
-      <input type="text" id="email">
+      <input type="email" id="email" name="email" required>
       <label for="telefone">Telefone</label>
-      <input type="text" id="telefone">
-      <label for="espec">Especificações</label>
-      <textarea id="espec"></textarea>
-      <button type="submit" class="btn btn-amarelo">Enviar</button>
+      <input type="text" id="telefone" name="telefone">
+      <!-- Campos para evitar spam -->
+
+      <label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
+      <input type="text" class="nao-aparece" name="leaveblank">
+      <label class="nao-aparece">Se você não é um robô, não mude este campo.</label>
+      <input type="text" class="nao-aparece" name="dontchange" value="http://">
+
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" required></textarea>
+      <button id="enviar" name="enviar" type="submit" class="btn btn-amarelo">Enviar</button>
     </form>
     <div class="grid-8 contato_dados">
       <h3>Dados</h3>
@@ -58,26 +70,26 @@
       <span>Rua Ali Perto - Botafogo</span>
       <span>Rio de Janeiro - RJ - Brasil</span>
       <h3>Redes Sociais</h3>
-        <div class="contato_redes">
-          <ul>
-            <li>
-              <a href="https://facebook.com" target="_blank">
-                <img src="https://bikcraft.com/wp-content/uploads/2019/08/facebook.svg" alt="Facebook bikecraft">
-              </a>
-            </li>
-            <li>
-              <a href="https://instagram.com" target="_blank">
-                <img src="https://bikcraft.com/wp-content/uploads/2019/08/instagram.svg" alt="Instagram bikcraft">
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com" target="_blank">
-                <img src="https://bikcraft.com/wp-content/uploads/2019/08/twitter.svg" alt="Twitte bikcraft">
-              </a>
-            </li>
-          </ul>
-        </div>
+      <div class="contato_redes">
+        <ul>
+          <li>
+            <a href="https://facebook.com" target="_blank">
+              <img src="https://bikcraft.com/wp-content/uploads/2019/08/facebook.svg" alt="Facebook bikecraft">
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com" target="_blank">
+              <img src="https://bikcraft.com/wp-content/uploads/2019/08/instagram.svg" alt="Instagram bikcraft">
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com" target="_blank">
+              <img src="https://bikcraft.com/wp-content/uploads/2019/08/twitter.svg" alt="Twitte bikcraft">
+            </a>
+          </li>
+        </ul>
       </div>
+    </div>
     </div>
   </section>
   <section class="container mapa">
@@ -136,6 +148,11 @@
       </div>
     </div>
   </footer>
+
+  <script src="./js/simple-anime.js"></script>
+  <script src="./js/simple-form.js"></script>
+  <script src="/js/script.js"></script>
+
 </body>
 
 </html>
