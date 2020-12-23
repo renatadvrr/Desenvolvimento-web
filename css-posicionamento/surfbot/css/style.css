@@ -1,0 +1,187 @@
+/* Reset */
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+a {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #252525;
+  max-width: 100%
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+.aviso {
+  height: 30%;
+  background: #1188EE;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  padding-top: 5px;
+}
+@media (max-width:739) {
+  .aviso{
+    height: 40px;
+  }
+}
+/* Menu */
+
+.menu {
+  background: #223344;
+  padding: 15px 0;
+}
+
+.menu img {
+  float: left;
+}
+
+.menu-nav ul {
+  float: right;
+}
+
+.menu-nav ul li {
+  display: inline-block;
+}
+
+.menu-nav ul li>.destaque::after {
+  content: "";
+  display: block;
+  border: 3px solid #D91504;
+}
+
+.separador::after {
+  content: "";
+  border-right: 2px solid #ffffff;
+  text-align: center;
+  display: block;
+  position: relative;
+  height: 20px;
+  top: -30px;
+}
+
+.menu-nav a {
+  color: #fff;
+  font-size: 1.125em;
+  margin-left: 10px;
+  padding: 10px;
+  display: block;
+}
+
+/* Introdução */
+
+.intro{
+  background: url(/surfbot/arquivos/surfbot-assets/bg-intro@2x.jpg) no-repeat center;
+  background-size: cover;
+  height: 400px;
+}
+.intro h1 {
+  font-family: 'Alice', serif;
+  font-size: 4.5em;
+  color: #ffffff;
+  font-weight: normal;
+  float: left;
+  margin-top: 250px;
+}
+.call-to-action{
+  float: right;
+  margin-top: 275px;
+  font-family: 'Nunito', sans-serif;
+
+}
+.call-to-action input {
+  border: 3px solid #E0EAF2;
+  border-radius: 5% 0 0 5%;
+	font-size: 1.25em;
+	width: calc(100% - 150px);
+	padding: 10px;
+  float: left;
+
+}
+.call-to-action form label {
+  display: none;
+}
+.call-to-action button {
+	background: #EE2211;
+	border: none;
+	text-transform: uppercase;
+	font-size: 1.125em;
+	color: #fff;
+	cursor: pointer;
+	width: 150px;
+	padding: 14px 0;
+  float: left;
+  border-radius: 0 5% 5% 0 ;
+}
+
+/* Info */
+
+.info {
+  padding: 60px 0;
+  float: left;
+  font-size: 1.5em;
+}
+.info-transporte {
+  padding: 60px 0;
+}
+.info-praia {
+  float: right;
+  padding-left: 130px;
+}
+.info-text{
+  font-family: 'Alice', serif;
+  font-size: 3em;
+  line-height: 1.2em;
+  padding-bottom: 40px;
+}
+.info-text span{
+  color: #1188EE;
+}
+.info-praia ul li{
+  padding-top: 20px;
+}
+.info-praia ul li img{
+  float: left;
+  padding-right: 30px;
+}
+.info-praia ul li p {
+  /* margin: 10px 40px; */
+  padding: 18px 0;
+}
+.info-separador {
+  display: block;
+  border-bottom: 3px solid #D91504;
+  padding-bottom: 20px;
+}
+.info-aleatorio {
+  padding-top: 60px;
+}
+.info-aleatorio p {
+  padding: 20px 0;
+}
+
+/* Aulas */
+.aulas{
+  background: #223344;
+  height: 650px;
+  color: #ffffff;
+}
