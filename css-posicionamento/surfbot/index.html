@@ -21,7 +21,7 @@
 
   <header class="menu">
     <div class="container">
-      <img src="/surfbot/arquivos/surfbot-assets/surfbot-logo.svg" alt="Surfbot">
+      <img src="/arquivos/surfbot-assets/surfbot-logo.svg" alt="Surfbot">
       <nav class="menu-nav">
         <ul>
           <li class="separador"><a href=""> Praia</a></li>
@@ -46,8 +46,8 @@
   <section class="container">
     <div class="info ">
       <div class="grid-6">
-        <img src="/surfbot/arquivos/surfbot-assets/prancha.png" alt="Pranchas de Surf">
-        <img src="/surfbot/arquivos/surfbot-assets/mapa@2x 1.png" alt="Mapa">
+        <img src="/arquivos/surfbot-assets/prancha.png" alt="Pranchas de Surf">
+        <img src="/arquivos/surfbot-assets/mapa@2x 1.png" alt="Mapa">
         <div class="info-transporte">
           <h3>Como chegar</h3>
           <ul>
@@ -64,15 +64,15 @@
         </div>
         <ul>
           <li class="info-separador ">
-            <img src="/surfbot/arquivos/icones/chinelo 1.png" alt="Chinelo">
+            <img src="/arquivos/icones/chinelo 1.png" alt="Chinelo">
             <p>8km de costa</p>
           </li>
           <li class="info-separador ">
-            <img src="/surfbot/arquivos/icones/coco 1.png" alt="Côco">
+            <img src="/arquivos/icones/coco 1.png" alt="Côco">
             <p>Restaurantes à beira mar</p>
           </li>
           <li class="info-separador ">
-            <img src="/surfbot/arquivos/icones/boia.png" alt="Bóia">
+            <img src="/arquivos/icones/boia.png" alt="Bóia">
             <p>Salva vidas</p>
           </li>
         </ul>
@@ -87,10 +87,10 @@
   <section class="aulas">
     <div class="container">
       <div class="mini-logo">
-        <img src="/surfbot/arquivos/surfbot-assets/surfbot-icon.svg" alt="Prancha">
-        <h1>Aulas</h1>
+        <img src="/arquivos/surfbot-assets/surfbot-icon.svg" alt="Prancha">
       </div>
-      <div class="card grid-4">
+      <h1>Aulas</h1>
+      <div class="card-aulas grid-4">
         <h4>Infantil</h4>
         <ul>
           <li>Público entre 5 e 15 anos</li>
@@ -98,8 +98,10 @@
           <li>Horários de Sex. à Sab.</li>
           <li>2 Horas seguidas de aula</li>
         </ul>
+        <p>R$ 49,00 / AULA</p>
+        <a href="#">Matricule-se</a>
       </div>
-      <div class="card grid-4">
+      <div class="card-aulas grid-4">
         <h4>Adulto</h4>
         <ul>
           <li>Público entre 15 a 60 anos</li>
@@ -107,11 +109,13 @@
           <li>Horários de Sex. à Sab.</li>
           <li>3 Horas seguidas de aula</li>
         </ul>
+        <p>R$ 89,00 / AULA</p>
+        <a href="#">Matricule-se</a>
       </div>
-      <div class="card grid-4">
+      <div class="card-aulas grid-4">
         <h4>Profissional</h4>
         <ul>
-          <li>Público com experincia acima de 3 anos</li>
+          <li>Público com experiência</li>
           <li>Equipamentos fornecidos</li>
           <li>Horários de Sex. à Sab.</li>
           <li>4 Horas seguidas de aula</li>
@@ -119,58 +123,75 @@
         <p>R$ 119,00 / AULA</p>
         <a href="#">Matricule-se</a>
       </div>
-      <p>Possui um grupo com mais de 3 pessoas? Entre em contato para um desconto personalizado.</p>
+
+      <p class="aula-grupo">Possui um grupo com mais de <span> 3 pessoas? Entre em contato</span> para um desconto personalizado.</p>
     </div>
   </section>
 
-  <section class="quote container">
-    <cite>
-      <h2>“O surf liberta as ondas de uma vida.”</h2>
-      <p>Regis Pereira</p>
-    </cite>
+  <section class="quote">
+    <div class="container">
+      <p class="quote-frase">"O surf liberta as ondas de uma vida."</p>
+      <p class="quote-autor">Regis Pereira</p>
+    </div>
   </section>
 
-  <section class="contato container">
-    <div class="mini-logo">
-      <img src="/surfbot/arquivos/surfbot-assets/surfbot-icon.svg" alt="Prancha">
+  <section class="contato">
+    <div class="container">
+      <div class="mini-logo ">
+        <img src="/arquivos/surfbot-assets/surfbot-icon.svg" alt="Prancha">
+
+      </div>
       <h1>Contato</h1>
-    </div>
-    <form class="contato-form">
-      <label>Nome</label>
-      <input type="text" placeholder="Digite seu nome">
-      <label>Email</label>
-      <input type="text" placeholder="Digite seu e-mail">
-      <label>Mensagem</label>
-      <input type="text">
-      <button class="contato-btn">Enviar Mensagem</button>
-    </form>
-    <div>
-      <p>Endereço</p>
-      <ul>
-        <li>Praia Mansa n° 47,</li>
-        <li>Rio de Janeiro - RJ</li>
-        <li>Procure a barraca vermelha</li>
-      </ul>
-      <p>ver no mapa</p>
-    </div>
-    <div>
-      <p>Email e Telefone</p>
-      <ul>
-        <li>contato@sufrbot.com</li>
-        <li>21 99999-9999</li>
-      </ul>
-    </div>
-    <div>
-      <p>Horário</p>
-      <ul>
-        <li>De sexta à sábado</li>
-        <li>Das 06:00 às 14:00</li>
-      </ul>
-    </div>
+      <form class="contato-form grid-5">
+        <label>Nome</label>
+        <input type="text" placeholder="Digite seu nome">
+        <label>Email</label>
+        <input type="text" placeholder="Digite seu e-mail">
+        <label>Mensagem</label>
+        <input type="text">
+        <button class="contato-btn">Enviar Mensagem</button>
+      </form>
+      <div class="grid-3 contato-local">
+        <div class="info-separador ">
+          <p>Endereço</p>
+          <ul>
+            <li>Praia Mansa n° 47,</li>
+            <li>Rio de Janeiro - RJ</li>
+            <li>Procure a barraca vermelha</li>
+          </ul>
+          <p>ver no mapa</p>
+        </div>
+        <div class="info-separador ">
+          <p>Email e Telefone</p>
 
+          <ul>
+            <li>contato@sufrbot.com</li>
+            <li>21 99999-9999</li>
+          </ul>
+        </div>
+        <div>
+          <p>Horário</p>
+          <ul>
+            <li>De sexta à sábado</li>
+            <li>Das 06:00 às 14:00</li>
+          </ul>
+        </div>
+        <div class="redes-sociais">
+          <ul>
+            <li><a href="#"><img src="/arquivos/icones/Vector.svg" alt=""></a></li>
+            <li><a href="#"><img src="/arquivos/icones/instagram 1.svg" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
 
-
+  <footer class="footer">
+    <div class="container">
+      <p>Surfbot 2020- Layout por Origamid, desenvolvimento HTML e CSS por Renata - Alguns direitos reservados.</p>
+      <img src="/arquivos/surfbot-assets/surfbot-logo.svg" alt="">
+    </div>
+  </footer>
 </body>
 
 </html>
