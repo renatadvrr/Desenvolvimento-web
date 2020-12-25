@@ -14,7 +14,7 @@ a {
 
 body {
   font-family: 'Nunito', sans-serif;
-  color: #252525;
+  color:#223344;
   max-width: 100%
 }
 
@@ -31,6 +31,9 @@ li {
   list-style: none;
 }
 
+
+/* Aviso */
+
 .aviso {
   height: 30%;
   background: #1188EE;
@@ -39,16 +42,18 @@ li {
   font-size: 14px;
   padding-top: 5px;
 }
+
 @media (max-width:739) {
-  .aviso{
+  .aviso {
     height: 40px;
   }
 }
+
 /* Menu */
 
 .menu {
   background: #223344;
-  padding: 15px 0;
+  padding-top: 20px;
 }
 
 .menu img {
@@ -62,13 +67,6 @@ li {
 .menu-nav ul li {
   display: inline-block;
 }
-
-.menu-nav ul li>.destaque::after {
-  content: "";
-  display: block;
-  border: 3px solid #D91504;
-}
-
 .separador::after {
   content: "";
   border-right: 2px solid #ffffff;
@@ -76,7 +74,7 @@ li {
   display: block;
   position: relative;
   height: 20px;
-  top: -30px;
+  top: -32px;
 }
 
 .menu-nav a {
@@ -87,13 +85,14 @@ li {
   display: block;
 }
 
-/* Introdução */
+/* IntroduÃ§Ã£o */
 
-.intro{
-  background: url(/surfbot/arquivos/surfbot-assets/bg-intro@2x.jpg) no-repeat center;
+.intro {
+  background: url(/arquivos/surfbot-assets/bg-intro@2x.jpg) no-repeat center;
   background-size: cover;
   height: 400px;
 }
+
 .intro h1 {
   font-family: 'Alice', serif;
   font-size: 4.5em;
@@ -102,35 +101,39 @@ li {
   float: left;
   margin-top: 250px;
 }
-.call-to-action{
+
+.call-to-action {
   float: right;
   margin-top: 275px;
   font-family: 'Nunito', sans-serif;
 
 }
+
 .call-to-action input {
   border: 3px solid #E0EAF2;
   border-radius: 5% 0 0 5%;
-	font-size: 1.25em;
-	width: calc(100% - 150px);
-	padding: 10px;
+  font-size: 1.25em;
+  width: calc(100% - 150px);
+  padding: 10px;
   float: left;
 
 }
+
 .call-to-action form label {
   display: none;
 }
+
 .call-to-action button {
-	background: #EE2211;
-	border: none;
-	text-transform: uppercase;
-	font-size: 1.125em;
-	color: #fff;
-	cursor: pointer;
-	width: 150px;
-	padding: 14px 0;
+  background: #EE2211;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.125em;
+  color: #fff;
+  cursor: pointer;
+  width: 150px;
+  padding: 14px 0;
   float: left;
-  border-radius: 0 5% 5% 0 ;
+  border-radius: 0 5% 5% 0;
 }
 
 /* Info */
@@ -140,48 +143,276 @@ li {
   float: left;
   font-size: 1.5em;
 }
+
 .info-transporte {
   padding: 60px 0;
 }
+
 .info-praia {
   float: right;
   padding-left: 130px;
 }
-.info-text{
+
+.info-text {
   font-family: 'Alice', serif;
   font-size: 3em;
   line-height: 1.2em;
   padding-bottom: 40px;
 }
-.info-text span{
+
+.info-text span {
   color: #1188EE;
 }
-.info-praia ul li{
+
+.info-praia ul li {
   padding-top: 20px;
 }
-.info-praia ul li img{
+
+.info-praia ul li img {
   float: left;
   padding-right: 30px;
 }
+
 .info-praia ul li p {
   /* margin: 10px 40px; */
   padding: 18px 0;
 }
+
 .info-separador {
   display: block;
   border-bottom: 3px solid #D91504;
   padding-bottom: 20px;
 }
+
 .info-aleatorio {
   padding-top: 60px;
 }
+
 .info-aleatorio p {
   padding: 20px 0;
 }
 
 /* Aulas */
-.aulas{
-  background: #223344;
-  height: 650px;
+.aulas {
+  background: #445566;
+  height: 700px;
   color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.aulas h1 {
+  font-family: 'Alice', serif;
+  font-size: 3em;
+  font-weight: normal;
+}
+
+.aulas .mini-logo {
+  position: relative;
+  left: 42%;
+  top: 48px;
+  max-width: 60px;
+}
+
+.card-aulas {
+  padding: 20px 0;
+  background: #FFFCFC;
+  color: #223344;
+  border-radius: 15%;
+  height: 350px;
+  margin: 40px 0;
+}
+
+.card-aulas h4 {
+  font-size: 1.625em;
+  margin: 0;
+}
+
+.card-aulas ul li {
+  font-size: 1.125em;
+  line-height: 1.8em;
+  position: relative;
+  margin: 0px auto;
+  padding: 10px 0 0 0;
+  text-align: left;
+  left: 10px;
+}
+
+.card-aulas ul li::after {
+  content: "";
+  /* display: block; */
+  position: relative;
+  border: 3px solid #D91504;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  float: left;
+  top: 10px;
+  margin: 0 5px;
+}
+
+.card-aulas li {
+  max-width: 260px;
+}
+
+.card-aulas p {
+  position: relative;
+  font-size: 1.125em;
+  color: #1188EE;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 20px 0;
+  right: 5px;
+}
+
+.card-aulas a {
+  position: relative;
+  background: #EE2211;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.125em;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 10px;
+  border-radius: 10%;
+}
+
+.aula-grupo {
+  margin: 0 auto;
+  max-width: 560px;
+  font-size: 1.625em;
+  padding: 40px 0;
+}
+
+.aula-grupo span {
+  color: #FF3726;
+}
+
+/* Quote */
+.quote {
+  background: url(/arquivos/surfbot-assets/foto-quote.jpg) no-repeat center;
+  background-size: cover;
+  height: 480px;
+  color: #ffffff;
+}
+
+.quote-frase {
+  padding: 150px 0 20px 0;
+  font-family: 'Alice', serif;
+  font-size: 4.5em;
+  color: #ffffff;
+  text-align: center;
+}
+
+.quote-autor {
+  text-align: center;
+  font-size: 1.625em;
+  font-family: 'Alice', serif;
+}
+
+/* Contato */
+
+.contato {
+  background: #E0EAF2;
+  height: 700px;
+  color: #223344;
+  font-family: 'Nunito', sans-serif;
+
+}
+
+.contato h1 {
+  font-family: 'Alice', serif;
+  color: #223344;
+  font-size: 3em;
+  font-weight: normal;
+  text-align: center;
+}
+
+.contato .mini-logo {
+  position: relative;
+  left: 40%;
+  top: 48px;
+  max-width: 60px;
+}
+
+.contato-local {
+  max-width: 400px;
+  padding: 30px;
+}
+
+.contato-form {
+  max-width: 400px;
+  max-height: 400px;
+  padding: 30px;
+}
+
+.contato-form label {
+  font-size: 1.125em;
+  color: #223344;
+}
+
+.contato-form input {
+  width: 400px;
+  height: 40px;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1.125em;
+  background: none;
+  border: 2px solid #BBCCDD;
+  border-radius: 5%;
+}
+
+.contato-btn {
+  background: #EE2211;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.125em;
+  font-weight: bold;
+  font-family: 'Nunito', sans-serif;
+  color: #fff;
+  cursor: pointer;
+  width: 200px;
+  padding: 14px 0;
+  margin-top: 30px;
+  border-radius: 5%;
+}
+
+.contato-local {
+  position: relative;
+  left: 230px;
+}
+
+.contato-local p {
+  font-size: 1.125em;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.contato-form::after {
+  content: "";
+  display: block;
+  position: relative;
+  border-right: 3px solid #D91504;
+  height: 400px;
+  left: 200px;
+  bottom: 300px;
+}
+.redes-sociais ul li{
+  float: left;
+  margin: 20px 20px 0 0;
+}
+.footer {
+  background: #223344;
+  color: #ffffff;
+}
+.footer p {
+  float: left;
+  margin: 40px auto;
+  font-size: 1.125em;
+  font-family: 'Nunito', sans-serif;
+}
+.footer img {
+ float: right;
+ margin: 30px auto;
 }
